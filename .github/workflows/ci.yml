@@ -51,7 +51,10 @@ jobs:
     needs: unit-test
     steps:
       - uses: actions/checkout@v1
-      - uses: ./
+      - name: Run semantic-release in dry run mode
+        uses: ./
         with:
           options: '--dry-run'
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
