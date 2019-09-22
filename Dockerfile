@@ -1,6 +1,6 @@
 FROM node:12-alpine
 
-RUN apk add git
+RUN apk add git --no-cache && rm -rf /var/cache/apk/*
 
 RUN npm install -g semantic-release @semantic-release/npm @semantic-release/git @semantic-release/changelog
 
