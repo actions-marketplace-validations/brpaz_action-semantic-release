@@ -2,9 +2,9 @@
 
 [![GitHub Action](https://img.shields.io/badge/GitHub-Action-blue?style=for-the-badge)](https://github.com/features/actions)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![GitHub Actions](https://github.com/brpaz/semantic-release/workflows/Test/badge.svg?style=for-the-badge)](https://github.com/brpaz/semantic-release/actions)
+[![GitHub Actions](https://github.com/brpaz/action-semantic-release/workflows/ci/badge.svg?style=for-the-badge)](https://github.com/brpaz/action-semantic-release/actions)
 
-> GitHub Action to automate publishing releases using [Semantic release](https://github.com/semantic-release/semantic-release).
+> GitHub Action to automate releases using [Semantic release](https://github.com/semantic-release/semantic-release).
 
 ## What is included
 
@@ -51,7 +51,7 @@ Please look at [CONTRIBUTING](CONTRIBUTING.md) for details how to get started.
 
 ## Author
 
-👤 **Bruno Paz*
+👤 **Bruno Paz**
 
 * Website: [https://brunopaz.net](https://brunopaz.net)
 * Github: [@brpaz](https://github.com/brpaz)
