@@ -1,0 +1,23 @@
+schemaVersion: 2.0.0
+metadataTest:
+  entrypoint: ['/entrypoint.sh']
+commandTests:
+  - name: "Check Git is installed"
+    command: git
+    args: ["version"]
+    exitCode: 0
+
+  - name: "node is installed"
+    command: node
+    args: ["-v"]
+    exitCode: 0
+
+  - name: "semantic-release is installed"
+    command: semantic-release
+    args: ["-v"]
+    exitCode: 0
+
+  - name: "semantic-release is installed"
+    command: semantic-release
+    args: ["--dry-run"]
+    exitCode: 0

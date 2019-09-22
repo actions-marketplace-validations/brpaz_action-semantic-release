@@ -1,0 +1,15 @@
+name: 'semantic-release'
+description: 'GitHub Action for Semantic release, a tool for fully automated version management and package publishing'
+author: 'Bruno Paz'
+inputs:
+  options:
+    description: 'Optional arguments to the semantic-release cli'
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.options }}
+branding:
+  icon: 'share'
+  color: 'purple'
