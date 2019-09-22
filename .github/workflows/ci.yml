@@ -17,16 +17,16 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Build Docker image
-        run: docker build -t myimage:$GITHUB_SHA .
+        run: docker build -t action:$GITHUB_SHA .
 
       - name: Save Docker image artifact
-        run:  docker save -o semantic-release.tar semantic-release:$GITHUB_SHA
+        run:  docker save -o action.tar action:$GITHUB_SHA
 
       - name: Upload image artifact
         uses: actions/upload-artifact@master
         with:
-          name: semantic-release-image
-          path: semantic-release.tar
+          name: action-image
+          path: action.tar
 
   test:
     runs-on: ubuntu-latest
@@ -36,10 +36,10 @@ jobs:
       - name: Pull Image artifact
         uses: actions/download-artifact@master
         with:
-          name: semantic-release-image
+          name: action-image
 
       - name: Load image into docker context
-        run: docker load -i emantic-release-image/emantic-release-image.tar
+        run: docker load -i action-image/action.tar
 
       - name: Run Structure tests
         run:  docker run -i --rm -v /var/run/docker.sock:/var/run/docker.sock -v $PWD:/test zemanlx/container-structure-test:v1.8.0-alpine test --image semantic-release:$GITHUB_SHA --config test/structure-tests.yaml
