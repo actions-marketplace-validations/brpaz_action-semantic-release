@@ -59,3 +59,14 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           EXTRA_PLUGINS: "semantic-release-docker"
 
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    needs: integration-test
+    steps:
+      - uses: actions/checkout@v1
+      - name: Release
+        uses: ./
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
