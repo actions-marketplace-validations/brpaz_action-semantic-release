@@ -5,4 +5,4 @@ if [[ ! -z "$EXTRA_PLUGINS" ]]; then
 fi
 
 # Run semantic release command
-semantic-release "$1"
+semantic-release "$@"
