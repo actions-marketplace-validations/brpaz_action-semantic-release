@@ -13,6 +13,7 @@ This action includes [semantic-release](https://github.com/semantic-release/sema
 * @semantic-release/npm 
 * @semantic-release/git 
 * @semantic-release/changelog
+* @semantic-release/github
 
 ## Usage
 
