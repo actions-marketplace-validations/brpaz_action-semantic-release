@@ -2,7 +2,7 @@
 
 [![GitHub Action](https://img.shields.io/badge/GitHub-Action-blue?style=for-the-badge)](https://github.com/features/actions)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![GitHub Actions](https://github.com/brpaz/action-semantic-release/workflows/ci/badge.svg?style=for-the-badge)](https://github.com/brpaz/action-semantic-release/actions)
+[![GitHub Actions](https://github.com/brpaz/action-semantic-release/workflows/CI/badge.svg?style=for-the-badge)](https://github.com/brpaz/action-semantic-release/actions)
 
 > GitHub Action to automate releases using [Semantic release](https://github.com/semantic-release/semantic-release).
 
@@ -39,17 +39,6 @@ steps:
         install_plugins: "semantic-release-docker semantic-release-gcr"
         branch: master
 
-```
-
-### Installing extra plugins.
-
-Semantic release has a big amount of [Plugins](https://semantic-release.gitbook.io/semantic-release/extending/plugins-list). Some of the most popular plugins like npm, git and changelog came pre-installed with this action, but you can install any other plugin by specifiyng the envrionment variable "EXTRA_PLUGINS" with a list of plugin names.
-
-```yml
-steps:
-    uses: brpaz/semantic-release@v1
-    env:
-        EXTRA_PLUGINS: "semantic-release-docker semantic-release-gcr"
 ```
 
 ## 🤝 Contributing
