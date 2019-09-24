@@ -17,7 +17,19 @@ commandTests:
     args: ["-v"]
     exitCode: 0
 
-  - name: "semantic-release is installed"
-    command: semantic-release
-    args: ["--dry-run"]
+  - name: "Semantic releases runs in dry run mode when environment INPUT_DRY_RUN env variable is set"
+    command: /entrypoint.sh
+    envVars:
+      - key: "INPUT_DRY_RUN"
+        value: "true"
     exitCode: 0
+
+  - name: "Semantic plugins are installed when INPUT_INSTALL_PLUGINS env var is set"
+    command: /entrypoint.sh
+    envVars:
+      - key: "INPUT_INSTALL_PLUGINS"
+        value: "semantic-release-docker"
+      - key: "INPUT_DRY_RUN"
+        value: "true"
+    exitCode: 0
+    expectedOutput: [".*semantic-release-docker.*"]
