@@ -54,7 +54,7 @@ jobs:
       - name: Run semantic-release in dry run mode
         uses: ./
         with:
-          install_plugins: "emantic-release-docker"
+          install_plugins: "semantic-release-docker"
           dry_run: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
