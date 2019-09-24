@@ -1,4 +1,4 @@
-name: 'semantic-release'
+name: 'Semantic Releaser'
 description: 'GitHub Action for Semantic release, a tool for fully automated version management and package publishing'
 author: 'Bruno Paz'
 inputs:

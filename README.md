@@ -21,7 +21,7 @@ On your GitHub Actions workflow file, add the following step:
 
 ```yml
 steps:
-    uses: brpaz/semantic-release@v1
+    uses: brpaz/action-semantic-release@v1
 ```
 
 This will run the "semantic-release" command without arguments. 
