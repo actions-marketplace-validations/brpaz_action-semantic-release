@@ -33,7 +33,7 @@ The action allows you to specify the following options:
 
 ```yml
 steps:
-    uses: brpaz/semantic-release@v1
+    uses: brpaz/action-semantic-release@v1
     with:
         dry_run: "false"
         install_plugins: "semantic-release-docker semantic-release-gcr"
