@@ -28,7 +28,7 @@ This will run the "semantic-release" command without arguments.
 The action allows you to specify the following options:
 
 * dry_run: Indicates where you want to run semantic release in "dry-run" mode. Defaults to false.
-* install_plguins: Specify a list of [Semantic Release Plugins](https://semantic-release.gitbook.io/semantic-release/extending/plugins-list) to install. Note that some plugins might depend on libraries that are not present in this action.
+* install_plugins: Specify a list of [Semantic Release Plugins](https://semantic-release.gitbook.io/semantic-release/extending/plugins-list) to install. Note that some plugins might depend on libraries that are not present in this action.
 * branch: Specify the branch to release from. Defaults to "master"
 
 ```yml
