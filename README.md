@@ -1,10 +1,14 @@
 # Semantic Release Action
 
+**This Action is deprecated** It was a nice learning experience, but there are more complete actions in the marketplace. I recommend : [Action For Semantic Release · Actions · GitHub Marketplace](https://github.com/marketplace/actions/action-for-semantic-release).
+
+
 [![GitHub Action](https://img.shields.io/badge/GitHub-Action-blue?style=for-the-badge)](https://github.com/features/actions)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![GitHub Actions](https://github.com/brpaz/action-semantic-release/workflows/CI/badge.svg?style=for-the-badge)](https://github.com/brpaz/action-semantic-release/actions)
 
 > GitHub Action to automate releases using [Semantic release](https://github.com/semantic-release/semantic-release).
+
 
 ## What is included
 
